@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/three": "^0.149.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "three": "^0.152.2",
+    "three-orbit-controls": "^82.1.0",
+    "three.meshline": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
@@ -20,35 +24,36 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.21",
+    "@types/three": "^0.151.0",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0",
+    "acorn-jsx": "^5.3.2",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "acorn-jsx": "^5.3.2",
-    "babel-loader": "^8.2.3",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-dts": "^0.9.9"
   },
   "license": "UNLICENSED",
   "peerDependencies": {
-      "react": "16.8.0 || 17.x",
-      "react-dom": "16.8.0 || 17.x",
-      "styled-components": "5.0.0"
+    "react": "16.8.0 || 17.x",
+    "react-dom": "16.8.0 || 17.x",
+    "styled-components": "5.0.0"
   },
   "files": [
-      "/dist"
+    "/dist"
   ],
   "main": "./dist/gcode-viewer.umd.js",
   "module": "./dist/gcode-viewer.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
-      ".": {
-          "import": "./dist/gcode-viewer.es.js",
-          "require": "./dist/gcode-viewer.umd.js",
-          "types": "./dist/index.d.ts"
-      }
+    ".": {
+      "import": "./dist/gcode-viewer.es.js",
+      "require": "./dist/gcode-viewer.umd.js",
+      "types": "./dist/index.d.ts"
+    }
   }
 }
