@@ -1,0 +1,10 @@
+{
+    "name": "gcode-viewer",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "package/*",
+            "site/*"
+        ]
+    }
+}
